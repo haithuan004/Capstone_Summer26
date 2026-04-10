@@ -10,7 +10,6 @@ Dự án Capstone: Nhận diện 4 hành động (Standing, Walking, Sitting, Fa
 2. **Kiến tạo Dữ liệu (Augmentation)** (`stgcn_dataset.py`): Khắc phục hạn chế tập dữ liệu nhỏ qua thuật toán Sliding Window (Temporal Slicing), Masking, Gaussian Noise, và Flip_LR.
 3. **Mô hình Mạng ST-GCN** (`stgcn_model.py`): Huấn luyện dựa trên Checkpoint Pre-trained từ MMAction2. Đi kèm Focal Loss & WeightedRandomSampler chống lệch phân phối dữ liệu (Imbalanced Mitigation).
 4. **Huấn luyện (Training & Eval)** (`train_stgcn.py`): Hệ thống đào tạo dựa trên kỹ thuật đánh giá chéo 5-Folds (K-fold Cross Validation) và đăng xuất số liệu đồ thị lên `Weights & Biases (WandB)`. 
-5. **Inference & Demo** (Thư mục `Demo/`): Source Code thu gọn phục vụ ráp ghép đường ống (Pipeline) cho các ứng dụng thực tế bằng Webcam hoặc CCTV.
 
 ## Hướng dẫn Run Demo Nhanh
 
